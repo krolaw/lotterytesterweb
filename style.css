@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body { background-color: white; font-family: 'Roboto', sans-serif; text-align: center; font-size: 12pt; }
+img.logo { width: 300pt; max-width: 90%; }
+img.store { height: 70pt; max-width: 90%; display: inline-block }
+p,ul,ol,table { text-align: justify; font-size: 14pt}
+ol li +li { margin-top: 0.5em }
+
+div.content, div.article { max-width: 660pt; margin: 0 auto 0 auto }
+
+.tipNote {
+    width: 250pt; max-width: 95%; border: 2pt black solid; padding: 0.5em; float: right; margin: 0.5em 0 1em 1em
+}
+.tipNote p, .tipNote h3, .tipNote h4 { margin: 0.5em 0 0 0; padding: 0; font-size:14pt }
+.tipNote h4 { font-weight: normal; font-style: italic;}
+.tipNote h3 { margin: 0; }
+
+table.draws { margin: auto }
+table.draws { border-collapse: collapse }
+table.draws th { border-bottom: 1pt black solid }
+table.draws td, table.draws th {  padding: 0.25em 0.5em 0.25em 0.5em }
+table.draws td { color: #aaa }
+table.draws b { color: #7300a8; font-weight: normal }
+table.draws i { font-weight: bold; font-style: normal;}
+
+a { color: #7300a8}
