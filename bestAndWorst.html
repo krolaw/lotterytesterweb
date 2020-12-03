@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best and Worst Tickets Explained</title>
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+    <link href="images/logo.svg" rel="icon" type="image/svg+xml" />
+</head>
+<body>
+    <div class="article">
+
+        <img src="images/logo.svg" class="logo"/>
+        <h1>LotteryTester.com</h1>
+        
+        <a href="/">Back Home</a>
+
+    <h1>Best and Worst Tickets Explained</h1>
+
+    <p>As covered in "<a href="avoidFalseMakeBetter.html">Avoid False Tips and Make Better Tickets</a>", all possible draws for any lottery have the same likelihood of occuring. Therefore it seems strange that some tickets can be better than others. To explain, we're going to make a fictional lottery called "Pot Luck" and use the <a href="/">LoTI app</a> to do the analysis. It will have 47 balls, from which 6 are drawn. This lottery will have 5 divisions:</p>
+
+    <table class="results">
+        <caption>Pot Luck's 5 ways to Win!</caption>
+        <tr><th>Division</th><th>Matching Balls</th><th>1 in Odds</th></tr>
+        <tr><td>1</td><td>6</td><td>10,737,573</td></tr>
+        <tr><td>2</td><td>5</td><td>43,649</td></tr>
+        <tr><td>3</td><td>4</td><td>873</td></tr>
+        <tr><td>4</td><td>3</td><td>50</td></tr>
+        <tr><td>5</td><td>2</td><td>7</td></tr>
+    </table>
+
+    <p>This example will be comparing tickets with 10 rows each. Here is one of the 10 million plus worst possible tickets:</p>
+
+    <table class="ticket">
+        <caption>Worst Possible Ticket</caption>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+    </table>
+
+    <table class="results">
+        <caption>Worst Possible Results</caption>
+        <tr><th>Division</th><th>Raw Coverage</th><th>Percentage</th></tr>
+        <tr><td>1</td><td>1</td><td>~0</td></tr>
+        <tr><td>2</td><td>246</td><td>0.002</td></tr>
+        <tr><td>3</td><td>12,300</td><td>0.115</td></tr>
+        <tr><td>4</td><td>213,200</td><td>1.986</td></tr>
+        <tr><td>5</td><td>1,519,050</td><td>14.147</td></tr>
+        <tr><td>Any</td><td>1,744,797</td><td>16.249</td></tr>
+        <tr><th colspan="3">Any expected wait draws: 6.154</th></tr>
+    </table>
+
+
+    <p>As can be seen above, all Worst's ticket rows are the same. This means you have the same chance of winning as a single row ticket. However, if you do win, you win on all 10 lines, seemingly making it just as good as any other 10 row ticket. This is not the full truth as:
+    </p>
+
+    <ol>
+        <li>You can expect to wait 10 times longer before your first win. For divisions of small odds, this could mean the difference between a life changing win for you, or your distant descendant.</li>
+        <li>Most lotteries, (particularly for the top divisions,) divide the prizes by the number of winners, so winning 10 times on the same division and draw, returns less than winning once on 10 different draws - significantly less if you are the only 1st division winner.</li>
+    </ol>
+
+    <p>To make the second point more clear, consider a shared prize division that has jackpotted to one million dollars. The table below calculates the expected prizes for winning 10 times on different draws and 10 times on the same draw, with respect to the number of other winners:</p>
+
+    <table class="results">
+        <caption>10 wins 10 draws vs 10 wins 1 draw for a Shared Prize of $1M</caption>
+        <tr><th>Other Winners</th><th>Total Prizes from<br/>10 draws</th><th>Total Prizes from<br/>10 wins 1 draw</th></tr>
+        <tr><td>0</td><td>$10,000,000</td><td>$1,000,000</td></tr>
+        <tr><td>1</td><td>$5,000,000</td><td>$909,091</td></tr>
+        <tr><td>2</td><td>$3,333,333</td><td>$833,333</td></tr>
+        <tr><td>3</td><td>$2,500,000</td><td>$769,230</td></tr>
+        <tr><td>5</td><td>$1,666,667</td><td>$666,667</td></tr>
+        <tr><td>10</td><td>$909,090</td><td>$500,000</td></tr>
+        <tr><td>100</td><td>$99,010</td><td>$90,909</td></tr>
+        <tr><td>10000</td><td>$1000</td><td>$999</td></tr>
+        <tr><td>n</td><td>10*1,000,000/(n+1)</td><td>1,000,000*10/(n+10)</td></tr>
+    </table>
+
+    <p>Thus, when prizes are shared, the expected return for wins across multiple draws will never be less than the expected return for same draw multiple wins - often significantly more.</p>
+
+    <p>Below we have a slightly better ticket, where all the rows have one number unique. In terms of coverage, this ticket has over a 41% probability of some kind of win, while the ticket above only had 16%. Its numbers are more spread, so it has better coverage.</p>
+
+    <table class="ticket">
+        <caption>Slightly Improved Ticket</caption>
+        <tr><td>1</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>2</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>3</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>4</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>5</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>6</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>7</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>8</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>9</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+        <tr><td>10</td><td>11</td><td>17</td><td>24</td><td>34</td><td>44</td></tr>
+    </table>
+
+    <table class="results">
+        <caption>Slightly Improved Results</caption>
+        <tr><th>Division</th><th>Raw Coverage</th><th>Percentage</th></tr>
+        <tr><td>1</td><td>10</td><td>~0</td></tr>
+        <tr><td>2</td><td>1,867</td><td>0.017</td></tr>
+        <tr><td>3</td><td>69,505</td><td>0.647</td></tr>
+        <tr><td>4</td><td>874,500</td><td>8.144</td></tr>
+        <tr><td>5</td><td>4,365,760</td><td>40.659</td></tr>
+        <tr><td>Any</td><td>4,484,907</td><td>41.768</td></tr>
+        <tr><th colspan="3">Any expected wait draws: 2.394</th></tr>
+    </table>
+
+    <p>The ticket below obviously has greater spread, and its coverage/odds are nearly double the ticket above, nearly halving the expected win wait time. It was generated randomly and shows that randomly generated tickets can be pretty good.</p>
+
+    <table class="ticket">
+        <caption>Random Ticket</caption>
+        <tr><td>7</td><td>21</td><td>10</td><td>13</td><td>39</td><td>37</td></tr>
+        <tr><td>41</td><td>47</td><td>19</td><td>45</td><td>13</td><td>5</td></tr>
+        <tr><td>2</td><td>4</td><td>21</td><td>8</td><td>25</td><td>9</td></tr>
+        <tr><td>7</td><td>17</td><td>19</td><td>35</td><td>32</td><td>41</td></tr>
+        <tr><td>33</td><td>23</td><td>37</td><td>10</td><td>25</td><td>41</td></tr>
+        <tr><td>21</td><td>9</td><td>1</td><td>23</td><td>17</td><td>13</td></tr>
+        <tr><td>4</td><td>29</td><td>8</td><td>16</td><td>25</td><td>31</td></tr>
+        <tr><td>40</td><td>19</td><td>14</td><td>24</td><td>8</td><td>31</td></tr>
+        <tr><td>2</td><td>11</td><td>12</td><td>4</td><td>34</td><td>13</td></tr>
+        <tr><td>11</td><td>19</td><td>30</td><td>3</td><td>21</td><td>8</td></tr>
+    </table>
+
+    <table class="results">
+        <caption>Random Results</caption>
+        <tr><th>Division</th><th>Raw Coverage</th><th>Percentage</th></tr>
+        <tr><td>1</td><td>10</td><td>~0</td></tr>
+        <tr><td>2</td><td>2,460</td><td>0.023</td></tr>
+        <tr><td>3</td><td>122,343</td><td>1.140</td></tr>
+        <tr><td>4</td><td>1,919,490</td><td>18.172</td></tr>
+        <tr><td>5</td><td>8,158,890</td><td>78.245</td></tr>
+        <tr><td>Any</td><td>8,583,746</td><td>79.941</td></tr>
+        <tr><th colspan="3">Any expected wait draws: 1.251</th></tr>
+    </table>
+
+    <p>The ticket below is also randomly generated and it is slightly better than the previous. Trouble is, without testing software, it would be extremely difficult to tell that it has an extra 4% probability of winning.</p>
+
+    <table class="ticket">
+        <caption>2nd Random Ticket</caption>
+        <tr><td>1</td><td>12</td><td>32</td><td>26</td><td>45</td><td>6</td></tr>
+        <tr><td>15</td><td>40</td><td>43</td><td>32</td><td>5</td><td>16</td></tr>
+        <tr><td>33</td><td>40</td><td>24</td><td>14</td><td>23</td><td>35</td></tr>
+        <tr><td>2</td><td>39</td><td>16</td><td>4</td><td>37</td><td>15</td></tr>
+        <tr><td>23</td><td>41</td><td>5</td><td>7</td><td>30</td><td>27</td></tr>
+        <tr><td>17</td><td>16</td><td>30</td><td>39</td><td>18</td><td>2</td></tr>
+        <tr><td>29</td><td>9</td><td>1</td><td>46</td><td>20</td><td>40</td></tr>
+        <tr><td>21</td><td>35</td><td>29</td><td>4</td><td>47</td><td>6</td></tr>
+        <tr><td>4</td><td>46</td><td>12</td><td>43</td><td>31</td><td>27</td></tr>
+        <tr><td>4</td><td>16</td><td>43</td><td>42</td><td>27</td><td>3</td></tr>
+    </table>
+
+    <table class="results">
+        <caption>2nd Random Results</caption>
+        <tr><th>Division</th><th>Raw Coverage</th><th>Percentage</th></tr>
+        <tr><td>1</td><td>10</td><td>~0</td></tr>
+        <tr><td>2</td><td>2,460</td><td>0.023</td></tr>
+        <tr><td>3</td><td>122,154</td><td>1.138</td></tr>
+        <tr><td>4</td><td>1,955,982</td><td>18.216</td></tr>
+        <tr><td>5</td><td>8,409,743</td><td>78.321</td></tr>
+        <tr><td>Any</td><td>8,940,258</td><td>83.261</td></tr>
+        <tr><th colspan="3">Any expected wait draws: 1.201</th></tr>
+    </table>
+
+    <p>Lastly, here's a ticket generated by LoTI. It provides yet another 10% of the total coverage, giving the greatest odds and therefore lowest expected wait.</p>
+
+    <table class="ticket">    
+        <caption>LoTI Ticket</caption>
+        <tr><td>39</td><td>13</td><td>9</td><td>33</td><td>16</td><td>46</td></tr>
+        <tr><td>28</td><td>8</td><td>17</td><td>12</td><td>6</td><td>32</td></tr>
+        <tr><td>1</td><td>27</td><td>36</td><td>14</td><td>35</td><td>24</td></tr>
+        <tr><td>25</td><td>10</td><td>20</td><td>45</td><td>44</td><td>42</td></tr>
+        <tr><td>5</td><td>30</td><td>41</td><td>15</td><td>21</td><td>36</td></tr>
+        <tr><td>23</td><td>19</td><td>3</td><td>47</td><td>22</td><td>34</td></tr>
+        <tr><td>7</td><td>31</td><td>38</td><td>26</td><td>37</td><td>40</td></tr>
+        <tr><td>42</td><td>29</td><td>21</td><td>23</td><td>17</td><td>27</td></tr>
+        <tr><td>11</td><td>4</td><td>18</td><td>2</td><td>43</td><td>29</td></tr>
+        <tr><td>1</td><td>32</td><td>5</td><td>13</td><td>4</td><td>44</td></tr>
+    </table>
+
+    <table class="results">
+        <caption>LoTI Results</caption>
+        <tr><th>Division</th><th>Raw Coverage</th><th>Percentage</th></tr>
+        <tr><td>1</td><td>10</td><td>~0</td></tr>
+        <tr><td>2</td><td>2,460</td><td>0.023</td></tr>
+        <tr><td>3</td><td>123,000</td><td>1.146</td></tr>
+        <tr><td>4</td><td>2,071,228</td><td>19.290</td></tr>
+        <tr><td>5</td><td>9,130,976</td><td>85.038</td></tr>
+        <tr><td>Any</td><td>10,045,027</td><td>93.550</td></tr>
+        <tr><th colspan="3">Any expected wait draws: 1.069</th></tr>
+    </table>
+
+    <p>The average coverage of all 10 row tickets for this lottery is 83.022%. LoTI's ticket, at over 93%,  is over 10% better. We don't claim LoTI numbers are optimal, but we expect them to be significantly better than average. While it's possible that a randomly generated ticket could outperform LoTI's, it's extremely unlikely. But if you are that lucky, you can test it using LoTI to verify your results.</p>
+
+    </div>
+</body>
+</html>
