@@ -9,6 +9,8 @@ ol li +li { margin-top: 0.5em }
 
 div.content, div.article { max-width: 660pt; margin: 0 auto 0 auto }
 
+div.tickets { vertical-align: top;}
+
 .tipNote {
     background-color: #f2eaff;
     width: 250pt; max-width: 95%; border: 2pt black solid; padding: 0.5em; float: right; margin: 0.5em 0 1em 1em
@@ -36,8 +38,10 @@ a { color: #7300a8}
 .results td, .results th { padding: 0 0.5em 0 0.5em }
 .results td { text-align: right }
 
+table { margin-top: 0.5em; }
 
 .ticket {
+    vertical-align: top;
     padding: 0.5em;
     border: 2pt black solid;
     display: inline-block; }
@@ -47,8 +51,9 @@ a { color: #7300a8}
     text-align: center;
     border-radius: 50%;
     line-height: 16pt;
+    display: inline-block;
     width: 20pt; height: 20pt;
 }
 
-.fb-like { margin-bottom: 1em }
+.fb-like { margin-bottom: 1em; clear: both;}
 .fblogo {width: 2em; height: 2em;}

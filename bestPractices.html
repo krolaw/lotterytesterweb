@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generation Best Practices - LotteryTester.com</title>
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+    <link href="images/logo.svg" rel="icon" type="image/svg+xml" />
+</head>
+<body>
+
+<div class="article">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="mC7exphT"></script>
+
+
+<img src="images/logo.svg" class="logo"/>
+<h1>LotteryTester.com</h1>
+
+<a href="/">Back Home</a>
+
+<h1>Ticket Generation Best Practices</h1>
+
+<h2>It's Fine to Re-use your Numbers</h2>
+
+<p>A ticket's winning probability is based on how many draws it can win on, out of every possible draw, irrespective of any past draws. Therefore, ticket numbers do not change their likelihood over time. If you have a high probability set, it makes sense to use it over and over again. Even if it wins, its likelihood will never change (unless the game rules change).</p>
+
+<h2>Don't Share Numbers</h2>
+    
+<p>Most major lotteries split the larger prizes by the number of winners. Every time you share your numbers you reduce your potential winnings and the potential winnings of every one you share with. If 10 family members all win big at the same time, they may only receive one tenth of what could have been, had they all won at different times. This is fundamentally the same as winning multiple times on the same ticket as described in <a href="bestAndWorst.html">Best and Worst Tickets Explained</a>.</p>
+
+<h2>Give Everyone Unique Numbers</h2>
+
+<p>Although LoTI generated numbers almost always outperform randomly generated ones, LoTI's numbers do have a random component, making it extremely unlikely that any two generated tickets (of reasonable length and game size) are ever the same. Therefore, if you want to give better numbers to friends and family, do so by finding out how many rows they play and have LoTI generate them their own unique ticket. It may pay to delete each ticket from the app afterwards, to ensure that it won't be reused.</p>
+
+<h2>Pooling</h2>
+
+<p>If the plan is to share any winnings amongst a group, have LoTI generate a single set with the total number of rows that will be played. Then divide the set of rows amongst the group. This gives a better overall spread than combining separately generated tickets, but each divided set will have less spread than a separately generated ticket of equal length - so don't do this unless winnings are shared amongst its members.</p>
+
+<h2>Example</h2>
+
+<p>The advice above wouldn't have much value if it couldn't be verified in some way. For this example, we will be using the same Pot Luck lottery as described in <a href="bestAndWorst.html">Best and Worst Tickets Explained</a>. The tickets used can be found at the bottom of the page. They were generated using the LoTI App's inbuilt generator. Below are the results comparing the single 20 row set (20) with two combined, yet separately generated 10 row sets (A and B). </p>
+
+<table class="results">
+    <caption>LoTI 20 Row Ticket Results Vs. 2x10</caption>
+    <tr><th>Division</th><th>Raw Cov.20</th><th>Raw Cov.10A+B</th><th>% 20</th><th>% 10A+B</th></tr>
+    <tr><td>1</td><td>20</td><td>20</td><td>~0</td><td>~0</td></tr>
+    <tr><td>2</td><td>4,920</td><td>4,920</td><td>0.046</td><td>0.046</td></tr>
+    <tr><td>3</td><td>246,000</td><td>244,353</td><td>2.291</td><td>2.276</td></tr>
+    <tr><td>4</td><td>3,867,755</td><td>3,726,478</td><td>36.021</td><td>34.705</td></tr>
+    <tr><td>5</td><td>10,497,122</td><td>10,500,349</td><td>97.761</td><td>97.791</td></tr>
+    <tr><td>Any</td><td>10,709,956</td><td>10,692,996</td><td>99.743</td><td>99.585</td></tr>
+</table>
+
+<p>Here the 20 row set outperforms the two independent 10 row sets. The difference is only small because the coverage is high. Examining harder games or looking at division 4 reveals the difference can be significant.</p>
+
+<p>The tables below represent the opposite use case, where the 20 row set is cut into two and all four tickets are compared.</p>
+
+<table class="results">
+    <caption>LoTI Row Ticket Results Raw Coverage</caption>
+    <tr><th>Division</th><th>20 1st half</th><th>20 2nd half</th><th>10A</th><th>10B</th></tr>
+    <tr><td>1</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+    <tr><td>2</td><td>2,460</td><td>2,460</td><td>2,460</td><td>2,460</td></tr>
+    <tr><td>3</td><td>123,000</td><td>123,000</td><td>123,000</td><td>123,000</td></tr>
+    <tr><td>4</td><td>2,041,848</td><td>2,045,340</td><td>2,071,164</td><td>2,071,228</td></tr>
+    <tr><td>5</td><td>8,798,517</td><td>8,836,295</td><td>9,130,404</td><td>9,130,976</td></tr>
+    <tr><td>Any</td><td>9,496,937</td><td>9,570,346</td><td>10,039,068</td><td>10,045,027</td></tr>
+</table>
+
+<table class="results">
+    <caption>LoTI Row Ticket Results Percent</caption>
+    <tr><th>Division</th><th>20 1st half</th><th>20 2nd half</th><th>10A</th><th>10B</th></tr>
+    <tr><td>1</td><td>~0</td><td>~0</td><td>~0</td><td>~0</td></tr>
+    <tr><td>2</td><td>0.023</td><td>0.023</td><td>0.023</td><td>0.023</td></tr>
+    <tr><td>3</td><td>1.146</td><td>1.146</td><td>1.146</td><td>1.146</td></tr>
+    <tr><td>4</td><td>19.016</td><td>19.048</td><td>19.289</td><td>19.290</td></tr>
+    <tr><td>5</td><td>81.941</td><td>82.293</td><td>85.032</td><td>85.038</td></tr>
+    <tr><td>Any</td><td>88.446</td><td>89.130</td><td>93.495</td><td>93.550</td></tr>
+</table>
+
+<p>The tables above clearly show that individual tickets taken from a larger set perform more poorly than tickets generated specific to the same length. The difference here appears more significant than the first table because the overall coverage is less. In any case, this example shows that, only when the prizes will be shared amongst the group, it is best to generate one large set for the entire group, as the overall coverage is higher. Otherwise it's best to generate separate sets for each individual, as each set benefits from a higher coverage.</p>
+
+
+<div class="fb-like" data-href="https://lotterytester.com/bestPractices.html" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-share="true"></div>
+    
+<div><a href="/">Back Home</a></div>
+
+<div class="tickets">
+<table class="ticket">
+    <caption>LoTI 20 Row Ticket</caption>
+    <tr><td>20</td><td>45</td><td>35</td><td>10</td><td>22</td><td>15</td></tr>
+    <tr><td>22</td><td>47</td><td>5</td><td>4</td><td>11</td><td>12</td></tr>
+    <tr><td>38</td><td>25</td><td>40</td><td>22</td><td>8</td><td>7</td></tr>
+    <tr><td>3</td><td>5</td><td>7</td><td>42</td><td>26</td><td>13</td></tr>
+    <tr><td>40</td><td>43</td><td>26</td><td>46</td><td>10</td><td>14</td></tr>
+    <tr><td>21</td><td>1</td><td>18</td><td>29</td><td>17</td><td>44</td></tr>
+    <tr><td>36</td><td>16</td><td>9</td><td>2</td><td>8</td><td>42</td></tr>
+    <tr><td>37</td><td>44</td><td>10</td><td>47</td><td>2</td><td>41</td></tr>
+    <tr><td>41</td><td>39</td><td>19</td><td>35</td><td>33</td><td>31</td></tr>
+    <tr><td>5</td><td>19</td><td>32</td><td>14</td><td>34</td><td>29</td></tr>
+    <tr><td>20</td><td>24</td><td>7</td><td>23</td><td>27</td><td>6</td></tr>
+    <tr><td>12</td><td>36</td><td>37</td><td>14</td><td>1</td><td>31</td></tr>
+    <tr><td>17</td><td>38</td><td>6</td><td>34</td><td>33</td><td>2</td></tr>
+    <tr><td>15</td><td>30</td><td>38</td><td>3</td><td>28</td><td>32</td></tr>
+    <tr><td>4</td><td>27</td><td>18</td><td>40</td><td>39</td><td>32</td></tr>
+    <tr><td>34</td><td>13</td><td>45</td><td>43</td><td>25</td><td>37</td></tr>
+    <tr><td>19</td><td>8</td><td>20</td><td>46</td><td>44</td><td>30</td></tr>
+    <tr><td>39</td><td>21</td><td>24</td><td>30</td><td>12</td><td>43</td></tr>
+    <tr><td>28</td><td>46</td><td>24</td><td>47</td><td>29</td><td>9</td></tr>
+    <tr><td>16</td><td>11</td><td>25</td><td>21</td><td>23</td><td>41</td></tr>
+</table>
+
+<table class="ticket">
+    <caption>LoTI 10 Row Ticket A</caption>
+    <tr><td>8</td><td>26</td><td>12</td><td>17</td><td>41</td><td>33</td></tr>
+    <tr><td>15</td><td>14</td><td>31</td><td>8</td><td>7</td><td>22</td></tr>
+    <tr><td>5</td><td>37</td><td>25</td><td>32</td><td>7</td><td>47</td></tr>
+    <tr><td>13</td><td>43</td><td>23</td><td>31</td><td>3</td><td>36</td></tr>
+    <tr><td>4</td><td>28</td><td>2</td><td>27</td><td>35</td><td>44</td></tr>
+    <tr><td>9</td><td>40</td><td>24</td><td>18</td><td>14</td><td>16</td></tr>
+    <tr><td>11</td><td>12</td><td>28</td><td>37</td><td>10</td><td>18</td></tr>
+    <tr><td>15</td><td>39</td><td>19</td><td>46</td><td>21</td><td>29</td></tr>
+    <tr><td>6</td><td>38</td><td>1</td><td>22</td><td>42</td><td>10</td></tr>
+    <tr><td>11</td><td>34</td><td>30</td><td>45</td><td>24</td><td>20</td></tr>
+</table>
+
+<table class="ticket">
+    <caption>LoTI 10 Row Ticket B</caption>
+<tr><td>44</td><td>17</td><td>9</td><td>24</td><td>8</td><td>3</td></tr>
+<tr><td>43</td><td>38</td><td>32</td><td>45</td><td>27</td><td>7</td></tr>
+<tr><td>25</td><td>12</td><td>26</td><td>35</td><td>47</td><td>28</td></tr>
+<tr><td>32</td><td>22</td><td>31</td><td>25</td><td>40</td><td>21</td></tr>
+<tr><td>22</td><td>39</td><td>33</td><td>29</td><td>2</td><td>1</td></tr>
+<tr><td>42</td><td>23</td><td>36</td><td>13</td><td>46</td><td>18</td></tr>
+<tr><td>5</td><td>20</td><td>14</td><td>6</td><td>40</td><td>4</td></tr>
+<tr><td>18</td><td>33</td><td>27</td><td>47</td><td>5</td><td>16</td></tr>
+<tr><td>10</td><td>39</td><td>31</td><td>16</td><td>11</td><td>37</td></tr>
+<tr><td>19</td><td>21</td><td>34</td><td>41</td><td>15</td><td>30</td></tr>
+</table>
+
+
+
+</div>
+    
+    
+
+</div>
+</body>
+</html>
